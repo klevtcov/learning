@@ -1,0 +1,37 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    border: 1px solid red;
+}
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+
+.navigation {
+    display: flex;
+    margin: 24px 60px 0 43px;
+}
+
+.menu_1 {
+    padding-left: 0; 
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid red;
+}
+
+.menu_2 {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid red;
+}
