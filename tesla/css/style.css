@@ -1,20 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
+    font-style: normal;
     margin: 0;
     padding: 0;
 }
 
 .header {
-    border: 1px solid red;
-}
 
-ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
-
 
 .container {
     width: 1440px;
@@ -22,17 +19,112 @@ ul {
     border: 1px solid red;
 }
 
-.navigation {
+nav {
     display: flex;
-    margin: 24px 60px 0 43px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 24px 60px 58px 43px;
 }
 
-.menu_1 {
-    padding-left: 0; 
-    border: 1px solid red;
-}
-
-.menu_2 {
+.menu_1, .menu_2 {
     padding: 0;
-    border: 1px solid red;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu_2 .menu-item {
+    margin-right: 30px;
+}
+
+.menu-item {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000;
+    text-decoration: none;
+    padding-bottom: 6px;
+    border-bottom: 2px transparent solid;
+    transition: 0.2s ;
+}
+
+.menu-item:hover, .menu-item.active {
+    border-bottom: 2px solid #E51937;
+    color: #E51937;
+}
+
+.item1 {
+    margin-right: 63px;
+}
+
+.item2 {
+    margin-right: 25px;
+}
+
+.item3 {
+    margin-right: 44px;
+}
+
+.item4 {
+    margin-right: 46px;
+}
+
+.tesla-title {
+    text-align: center;
+    background-image: url(../img/Tesla\ logo\ +\ car.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 594px;
+    margin-bottom: 26px;
+}
+
+.tesla-title h1 {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 90px;
+    line-height: 110px;
+
+}
+
+.tesla-title p {
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.tesla-info {
+    display: flex;
+}
+
+.info-block {
+    display: flex;
+    align-items: center;
+}
+
+.info-block-img {
+    width: 46px;
+    height: 34.13px;
+    margin-right: 14px;
+}
+
+.info-block-text1 {
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 43px;
+    margin-right: 6px;
+}
+
+.info-block-text1 span {
+    font-size: 20px;
+    line-height: 24px;
+    vertical-align: middle;
+}
+
+.info-block-text2 {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
 }
