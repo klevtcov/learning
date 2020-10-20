@@ -8,6 +8,14 @@ body {
     border: 1px solid red;
 }
 
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
 .container {
     width: 1440px;
     margin: 0 auto;
@@ -21,17 +29,10 @@ body {
 
 .menu_1 {
     padding-left: 0; 
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     border: 1px solid red;
 }
 
 .menu_2 {
     padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     border: 1px solid red;
 }
