@@ -97,6 +97,7 @@ nav {
 
 .tesla-info {
     display: flex;
+    justify-content: center;
 }
 
 .info-block {
@@ -108,6 +109,20 @@ nav {
     width: 46px;
     height: 34.13px;
     margin-right: 14px;
+}
+
+.info-block-img2 {
+    width: 26.4px;
+    height: 42.37px;
+    margin-right: 13.8px;
+    margin-left: 82px;
+}
+
+.info-block-img3 {
+    width: 22px;
+    height: 22px;
+    margin-right: 7px;
+    margin-left: 109px;
 }
 
 .info-block-text1 {
@@ -128,3 +143,40 @@ nav {
     font-size: 12px;
     line-height: 15px;
 }
+
+.info-block-text3 {
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-right: 40px;
+}
+
+.info-btn {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    border: 2px solid #E51937;
+    width: 160px;
+    height: 40px;
+    transform: all 0.2s linear;
+}
+
+.info-btn:hover {
+    border: 3px solid #E51937;
+} 
+
+.btn {
+    font-weight: bold;
+    color: #E51937;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    width: 147px;
+    height: 24px;
+    margin: 11px 6px 5px 7px;
+}
+
