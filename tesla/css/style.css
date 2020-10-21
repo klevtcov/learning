@@ -84,7 +84,6 @@ nav {
     font-weight: 600;
     font-size: 90px;
     line-height: 110px;
-
 }
 
 .tesla-title p {
@@ -109,13 +108,11 @@ nav {
 .info-block-img {
     width: 46px;
     height: 34.13px;
-    margin-right: 14px;
 }
 
 .info-block-img2 {
     width: 26.4px;
     height: 42.37px;
-    margin-right: 13.8px;
     margin-left: 82px;
 }
 
@@ -132,6 +129,7 @@ nav {
     font-size: 35px;
     line-height: 43px;
     margin-right: 6px;
+    margin-left: 14px;
 }
 
 .info-block-text1 span {
@@ -144,6 +142,7 @@ nav {
     font-weight: normal;
     font-size: 12px;
     line-height: 15px;
+    margin-left: 14px;
 }
 
 .info-block-text3 {
@@ -205,7 +204,7 @@ nav {
     }
 
     .tesla-title {
-        min-height: 200px;
+        min-height: 357px;
         background-size: contain;
         background-position: center bottom;
         
@@ -223,7 +222,9 @@ nav {
 
     .tesla-info {
         flex-wrap: wrap;
+        justify-content: space-around;
     }
+
 
     .info-block {
         margin-right: 0px;
@@ -233,5 +234,57 @@ nav {
         margin-right: 0;
     }
 
+    .info-block-img {
+        width: 38.14px;
+        height: 27.98px;
+    }
+
+    .info-block-img2 {
+        width: 21.89px;
+        height: 34.74px;
+        margin-left: 0;
+    }   
+
+    .info-block-img3 {
+        margin-right: 10px;
+        margin-left: 36px;
+        color: #E51937;
+    }
+
+    .info-block-text1 {
+        font-size: 27px;
+        line-height: 33px;
+    }
+
+    .info-block-text1 span {
+        font-size: 15px;
+        line-height: 18.9px;
+        vertical-align: middle;
+    }
+
+    .info-block-text2 {
+        font-size: 10px;
+        line-height: 13px;
+    }
+
+    .info-block-text3 {
+        font-size: 13px;
+        line-height: 15.85px;
+    }
+
+    .btn {
+        font-weight: bold;
+        color: #E51937;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 13px;
+        line-height: 16px;
+        text-align: center;
+        width: 160px;
+        height: 40px;
+    }
+
 
 }
+
+
