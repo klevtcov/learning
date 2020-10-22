@@ -71,10 +71,10 @@ nav {
 
 .tesla-title {
     text-align: center;
-    background-image: url(../img/Tesla\ logo\ +\ car.png);
+    background-image: url(../img/Tesla-Wordmark-Red2.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 594px;
+    background-size: 1514px 467px;
+    min-height: 467px;
     margin-bottom: 26px;
 }
 
@@ -92,6 +92,11 @@ nav {
     font-weight: 500;
     font-size: 15px;
     line-height: 18px;
+}
+
+.tesla-title img {
+    max-width: 968px;
+    padding-top: 14px;
 }
 
 .tesla-info {
@@ -204,9 +209,10 @@ nav {
     }
 
     .tesla-title {
-        min-height: 357px;
+/*        background-size: 448px 139px;*/
         background-size: contain;
-        background-position: center bottom;
+        background-position: center;
+        min-height: 200px;
         
     }
 
@@ -220,70 +226,14 @@ nav {
         line-height: 12px;
     }
 
-    .tesla-info {
-        flex-wrap: wrap;
-        justify-content: space-around;
+    .tesla-title img {
+        max-width: 357px;
+        padding-top: 10px;
     }
-
 
     .info-block {
-        margin-right: 0px;
+        margin-right: 41px;
     }
-
-    .tesla-info:nth-child(2) {
-        margin-right: 0;
-    }
-
-    .info-block-img {
-        width: 38.14px;
-        height: 27.98px;
-    }
-
-    .info-block-img2 {
-        width: 21.89px;
-        height: 34.74px;
-        margin-left: 0;
-    }   
-
-    .info-block-img3 {
-        margin-right: 10px;
-        margin-left: 36px;
-        color: #E51937;
-    }
-
-    .info-block-text1 {
-        font-size: 27px;
-        line-height: 33px;
-    }
-
-    .info-block-text1 span {
-        font-size: 15px;
-        line-height: 18.9px;
-        vertical-align: middle;
-    }
-
-    .info-block-text2 {
-        font-size: 10px;
-        line-height: 13px;
-    }
-
-    .info-block-text3 {
-        font-size: 13px;
-        line-height: 15.85px;
-    }
-
-    .btn {
-        font-weight: bold;
-        color: #E51937;
-        text-transform: uppercase;
-        text-decoration: none;
-        font-size: 13px;
-        line-height: 16px;
-        text-align: center;
-        width: 160px;
-        height: 40px;
-    }
-
 
 }
 
