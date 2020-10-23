@@ -209,10 +209,11 @@ nav {
     }
 
     .tesla-title {
-/*        background-size: 448px 139px;*/
-        background-size: contain;
-        background-position: center;
-        min-height: 200px;
+       /* background-size: 448px 139px;*/
+        background-size: 100%;
+        /*background-position: center;*/
+        background-position: top;
+        min-height: 300px;
         
     }
 
@@ -232,8 +233,10 @@ nav {
     }
 
     .info-block {
-        margin-right: 41px;
+        
     }
+
+
 
 }
 
