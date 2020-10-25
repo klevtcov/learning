@@ -263,6 +263,10 @@ nav {
         margin-top: 52px;
     }
 
+    .info-block:nth-child(4) {
+        margin-right: 36px;
+    }
+
     .info-block-text1 {
     margin: 0;
     padding: 0;
