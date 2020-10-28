@@ -215,8 +215,12 @@ nav {
 .right-section {
     width: 440px;
     background: #E51937;
-    padding: 51px 72px 63px 52px;
 }
+
+.main-top {
+    padding: 51px 72px 0px 52px;
+}
+
 
 .main-top h3 {
     font-weight: 600;
@@ -233,28 +237,42 @@ nav {
     margin: 0;
     padding: 0;
     margin-top: 11px;
+    margin-bottom: 54px;
 }
 
 .features-box {
-
+    padding-left: 52px;
+    padding-right: 150px;
 }
 
 .features {
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
 }
+
 .features-img {
+    align-self: center;
+    margin-right: 19px;
 }
+
 .features-text-box {
+
 }
+
+
 .features-title {
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
+    margin: 0;
 }
 
 .features-title2 {
     font-weight: 600;
     font-size: 20px;
     line-height: 18px;
+    margin: 0;
 }
 
 .features-accent {
@@ -265,25 +283,45 @@ nav {
 .features-text {
     font-size: 12px;
     line-height: 15px;
+    margin: 0;
 }
 
 
 .main-bottom {
-
+    display: flex;
+    margin-top: 136px;
+    padding-bottom: 63px;
 }
 
 
 .information {
+    display: flex;
+    align-items: center;
     font-weight: bold;
     font-size: 13px;
     line-height: 16px;
-}
-.order {
-}
-.order-btn {
+    align-self: center;
+    justify-content: space-between;
+    margin-right: 22px;
 }
 
+.information img {
+    align-self: center;
+    margin-left: 10px;
+}
 
+.info-btn-inverse {
+    border: 2px solid #fff;
+}
+
+.btn-inverse {
+    color: #fff;
+}
+
+.info-btn-inverse:hover {
+    border: 3px solid #fff;
+    cursor: pointer;
+} 
 
 
 
