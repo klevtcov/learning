@@ -78,7 +78,7 @@ nav {
     margin-bottom: 26px;
 }
 
-.tesla-title h1 {
+.tesla-title h1 { 
     margin: 0;
     padding: 0;
     font-weight: 600;
@@ -192,6 +192,287 @@ nav {
     text-align: center;
 }
 
+.main {
+    height: 900px;
+    color: #fff;
+    margin-top: 37px;
+}
+
+.main-inner {
+    display: flex;
+    background-image: url(../img/2013-tesla-model-s-cockpit.png);
+    justify-content: space-between;
+}
+
+.left-section h2{
+    margin-left: 80px;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 85px;
+    color: #E51937;
+}
+
+.right-section {
+    width: 440px;
+    background: #E51937;
+}
+
+.main-top {
+    padding: 51px 72px 0px 52px;
+}
+
+
+.main-top h3 {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    margin: 0;
+    padding: 0;
+}
+
+.main-top p {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    margin: 0;
+    padding: 0;
+    margin-top: 11px;
+    margin-bottom: 54px;
+}
+
+.features-box {
+    padding-left: 52px;
+    padding-right: 150px;
+}
+
+.features {
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.features-img {
+    align-self: center;
+    margin-right: 19px;
+}
+
+.features-text-box {
+
+}
+
+
+.features-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0;
+}
+
+.features-title2 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 18px;
+    margin: 0;
+}
+
+.features-accent {
+    font-size: 35px;
+    line-height: 43px;
+}
+
+.features-text {
+    font-size: 12px;
+    line-height: 15px;
+    margin: 0;
+}
+
+
+.main-bottom {
+    display: flex;
+    margin-top: 136px;
+    padding-bottom: 63px;
+}
+
+
+.information {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 16px;
+    align-self: center;
+    justify-content: space-between;
+    margin-right: 22px;
+}
+
+.information img {
+    align-self: center;
+    margin-left: 10px;
+}
+
+.info-btn-inverse {
+    border: 2px solid #fff;
+}
+
+.btn-inverse {
+    color: #fff;
+}
+
+.info-btn-inverse:hover {
+    border: 3px solid #fff;
+    cursor: pointer;
+} 
+
+
+
+@media (max-width: 768px) {
+
+    .container {
+        width: 768px;
+    }
+    
+    .navigation {
+        margin: 0px 21px 26px 2px;
+    }
+
+    .menu-item {
+        display: none;
+    }
+
+    .logo a img{
+        width: 166px;
+        height: 51px;
+        left: calc(50% - 166px/2 - 285.68px);
+        top: 24px;
+    }
+
+    .menu_2 li img {
+        width: 35.23px;
+        height: 22.02px;
+        left: calc(50% - 35.23px/2 + 333.38px);
+        top: 38.49px;
+    }
+
+    .tesla-title {
+        background-size: 100%;
+        background-position-x: 50%;
+        background-position-y: 43%;
+        min-height: 300px; 
+        margin-bottom: 12px;
+    }
+
+    .tesla-title h1 {
+        font-size: 90px;
+        line-height: 110px;
+    }
+
+    .tesla-title p {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .tesla-title img {
+        max-width: 673px;
+        padding-top: 87px;
+    }
+
+    .tesla-info {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 38px;
+    }
+    
+    .info-block {
+        margin: 0;
+    }
+
+    .info-block:first-child {
+        margin-left: 140px;
+    }
+
+    .info-block:nth-child(2) {
+        margin-right: 140px;
+    }
+
+    .info-block:nth-child(3) {
+        margin-left: 174px;
+        margin-top: 84px;
+    }
+
+    .info-block:nth-child(4) {
+        margin-right: 174px;
+        margin-top: 57.81px;
+    }
+
+    .info-block-text1 {
+        margin: 0;
+        padding: 0;
+        font-size: 50px;
+        line-height: 61px;
+    }
+
+    .info-block-text1 span {
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .info-block-text2 {
+        padding: 0;
+        margin: 0;
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .info-block-text3 {
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+        line-height: 20px;
+        color: #E51937;
+    }
+
+    .info-block-img {
+        margin: 0;
+        padding: 0;
+        width: 65.92px;
+        height: 48.91px;
+        margin-right: 20.06px;
+    }
+
+    .info-block-img2 {
+        margin: 0;
+        padding: 0;
+        width: 37.83px;
+        height: 60.72px;
+        margin-right: 17.91px;
+    }
+
+    .info-block-img3 {
+        margin: 0;
+        padding: 0;
+        margin-right: 15px;
+    }
+
+    .info-btn {
+        width: 220.84px;
+        height: 55.21px;
+        background-color: #e51937;
+
+    }
+    
+    .btn {
+        color: #fff;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        width: 202.9px;
+        height: 33.13px;   
+        margin: 20px 8px 5px 9px;
+    }
+}
+
 @media (max-width: 375px) {
 
     .container {
@@ -244,6 +525,7 @@ nav {
     .tesla-info {
         flex-wrap: wrap;
         justify-content: space-between;
+        margin-bottom: 34px;
     }
     
     .info-block {
@@ -268,17 +550,17 @@ nav {
     }
 
     .info-block-text1 {
-    margin: 0;
-    padding: 0;
-    font-size: 27px;
-    line-height: 33px;
+        margin: 0;
+        padding: 0;
+        font-size: 27px;
+        line-height: 33px;
     }
 
     .info-block-text1 span {
-    margin: 0;
-    padding: 0;
-    font-size: 15px;
-    line-height: 18px;
+        margin: 0;
+        padding: 0;
+        font-size: 15px;
+        line-height: 18px;
     }
 
     .info-block-text2 {
@@ -289,11 +571,11 @@ nav {
     }
 
     .info-block-text3 {
-    margin: 0;
-    padding: 0;
-    font-size: 13px;
-    line-height: 16px;
-    color: #E51937;
+        margin: 0;
+        padding: 0;
+        font-size: 13px;
+        line-height: 16px;
+        color: #E51937;
     }
 
     .info-block-img {
@@ -316,12 +598,18 @@ nav {
         margin: 0;
         padding: 0;
         margin-right: 7px;
-        color: #E51937;
     }
 
+    .info-btn {
+        margin-top: 43px;
+        background-color: #e51937;
+    }
     
-
-
+    .btn {
+        color: #fff;
+        
+    }
 }
+
 
 
