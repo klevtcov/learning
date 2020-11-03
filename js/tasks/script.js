@@ -30,14 +30,32 @@ var reverseString = function (str) {
     for (let i = str.length; i > 0; i--) {
         rts += str[i - 1];
     };
-    return(rts);
+    return (rts);
 };
 
 
 // Chessboard
-document.querySelector('.chessboard').addEventListener('click', function () {
-    var 
+document.querySelector('.chessboard').onclick = function () {
+    var wht = ' ';
+    var blk = '#';
+    var row = '';
+    var desk = '';
+    for (let index = 0; index < 4; index++) {
+        row += wht + blk;
+    };
+    for (let index = 0; index < 8; index++) {
+        desk += row + '\n';
+        row = reverseString(row);
+    };
+    console.log(desk);
+};
 
+// Minimum
+//var minimumA = document.querySelector('.minimumA').value;
+var minimumA = parseFloat(document.querySelector('.minimumA').value);
+var minimumB = document.querySelector('.minimumB').value;
+document.querySelector('.funcMin').onclick = function (minimumA, minimumB) {
+var funcMin = (minimumA, minimumB) => minimumA <= minimumB ? minimumA : minimumB;
 
-});
+};
 

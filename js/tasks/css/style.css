@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.code {
+    max-width: 400px;
+}
+
+.btn {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
