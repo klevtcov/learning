@@ -1,15 +1,16 @@
 // Triangle
-
 document.querySelector('.triangle').addEventListener('click', function () {
-    var triangle = '#';
-    for (let i = 0; i < 7; i++) {
-        console.log(triangle);
-        triangle += '#';
-    }
+    var triangleDraw = function () {
+        var triangle = '#';
+        for (let i = 0; i < 7; i++) {
+            console.log(triangle);
+            triangle += '#';
+        };
+    };
+    triangleDraw();
 });
 
 // FizzBuzz
-
 document.querySelector('.fizzbuzz').addEventListener('click', function () {
     for (let i = 1; i < 101; i++) {
         if (i % 3 == 0 && i % 5 == 0) {
@@ -33,7 +34,6 @@ var reverseString = function (str) {
     return (rts);
 };
 
-
 // Chessboard
 document.querySelector('.chessboard').onclick = function () {
     var wht = ' ';
@@ -51,11 +51,38 @@ document.querySelector('.chessboard').onclick = function () {
 };
 
 // Minimum
-//var minimumA = document.querySelector('.minimumA').value;
-var minimumA = parseFloat(document.querySelector('.minimumA').value);
-var minimumB = document.querySelector('.minimumB').value;
-document.querySelector('.funcMin').onclick = function (minimumA, minimumB) {
-var funcMin = (minimumA, minimumB) => minimumA <= minimumB ? minimumA : minimumB;
-
+document.querySelector('.funcMin').onclick = function () {
+    var minimumA = parseFloat(document.querySelector('.minimumA').value);
+    var minimumB = parseFloat(document.querySelector('.minimumB').value);
+    var funcMin = (minimumA, minimumB) => minimumA <= minimumB ? minimumA : minimumB;
+    console.log(funcMin(minimumA, minimumB));
+    document.querySelector('.funcMinAnswer').textContent = funcMin(minimumA, minimumB) + ' меньше';
 };
+
+// Recurtion
+document.querySelector('.recurtion').onclick = function () {
+    var recurtionValue = parseFloat(document.querySelector('.recurtionValue').value);
+    var isEven = function (val) {
+        if (val < 0) {
+            val = -val;
+        };
+        if (val == 0) {
+            console.log(true);
+            return true;
+        } else if (val == 1) {
+            console.log(false);
+            return false;
+        } else {
+            isEven(val - 2);
+        };
+    };
+    isEven(recurtionValue);
+    document.querySelector('.recurtionAnswer').textContent = isEven(recurtionValue) + ' is';
+};
+
+// Beans
+
+
+
+
 

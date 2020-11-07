@@ -15,3 +15,10 @@ body {
     padding-top: 10px;
     padding-bottom: 20px;
 }
+
+.answer {
+    border: 1px solid #000;
+    margin-bottom: 20px;
+    width: 345px;
+}
+
