@@ -68,16 +68,16 @@ document.querySelector('.recurtion').onclick = function () {
         };
         if (val == 0) {
             console.log(true);
-            return true;
+            document.querySelector('.recurtionAnswer').textContent = recurtionValue + ' is even';
         } else if (val == 1) {
             console.log(false);
-            return false;
+            document.querySelector('.recurtionAnswer').textContent = recurtionValue + ' is not even';
         } else {
             isEven(val - 2);
         };
     };
     isEven(recurtionValue);
-    document.querySelector('.recurtionAnswer').textContent = isEven(recurtionValue) + ' is';
+    
 };
 
 // Beans
