@@ -77,12 +77,84 @@ document.querySelector('.recurtion').onclick = function () {
         };
     };
     isEven(recurtionValue);
-    
+
 };
 
 // Beans
+document.querySelector('.beans').onclick = function () {
+    var beansString = document.querySelector('.beansString').value;
+    var beansLetter = document.querySelector('.beansLetter').value;
+    var countChar = function (str, letter) {
+        var count = 0;
+        for (let i = 0; i < str.length; i++) {
+            if (str[i] == letter) {
+                count++;
+            };
+        };
+        return count;
+    };
+    document.querySelector('.beansAnswer').textContent = countChar(beansString, beansLetter) + ' letters ' + beansLetter + ' in ' + beansString;
+};
 
+// Range
+var rangeArray = [];
+var range = function (rangeStart, rangeEnd, step) {
+    rangeArray = [];
+    if (step > 0) {
+        for (let i = rangeStart; i <= rangeEnd; i += step) {
+            rangeArray.push(i);
+        };
+    } else if (step == 0) {
+        rangeArray = [];
+    } else if (step < 0) {
+        for (let i = rangeStart; i >= rangeEnd; i += step) {
+            rangeArray.push(i);
+        };
+    };
+    console.log(rangeArray);
+    return rangeArray;
+};
 
+var rangeSum = function (arr) {
+    var sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    };
+    console.log(sum);
+    return sum;
+};
 
+/*
+step = typeof step !== 'undefined' ?  step : 1;
+var range = function (rangeStart, rangeEnd, step) {
+    if (step < 0) {
+        for (let i = rangeEnd; i >= rangeStart; i += step) {
+            rangeArray.push(i);
+        };
+    } else if (step = 0) {
+        rangeArray = [];
+    } else {
+        for (let i = rangeStart; i <= rangeEnd; i += step) {
+            rangeArray.push(i);
+        };
+    };
+    console.log(rangeArray);
+    return rangeArray;
+};
 
+*/
 
+document.querySelector('.range').onclick = function () {
+    var rangeStart = parseFloat(document.querySelector('.rangeStart').value);
+    var rangeEnd = parseFloat(document.querySelector('.rangeEnd').value);
+    var step = parseFloat(document.querySelector('.rangeStep').value);
+    range(rangeStart, rangeEnd, step);
+    document.querySelector('.rangeAnswer').textContent = rangeArray;
+};
+
+document.querySelector('.rangeSum').onclick = function () {
+    var rangeStart = parseFloat(document.querySelector('.rangeStart').value);
+    var rangeEnd = parseFloat(document.querySelector('.rangeEnd').value);
+    var step = parseFloat(document.querySelector('.rangeStep').value);
+    document.querySelector('.rangeSumAnswer').textContent = rangeSum(range(rangeStart, rangeEnd, step));
+};
