@@ -158,3 +158,30 @@ document.querySelector('.rangeSum').onclick = function () {
     var step = parseFloat(document.querySelector('.rangeStep').value);
     document.querySelector('.rangeSumAnswer').textContent = rangeSum(range(rangeStart, rangeEnd, step));
 };
+
+
+// Recurtion array
+
+
+var arrayToReverse = ['A', 'B', 'C'];
+var reverseArray = function(arr) {
+    let reversedArray = [];
+    for (let i = (arr.length - 1); i >= 0; i--) {
+        reversedArray.push(arr[i]);
+    };
+    return reversedArray;
+};
+
+var reverseArrayInPlace = function() {
+    arrayToReverse = reverseArray(arrayToReverse);
+};
+
+document.querySelector('.recurtionArray').onclick = function () {
+    reverseArray(arrayToReverse);
+    document.querySelector('.recurtionArrayAnswer').textContent = reverseArray(arrayToReverse);
+};
+
+document.querySelector('.recurtionInArray').onclick = function () {
+    reverseArrayInPlace(arrayToReverse);
+    document.querySelector('.recurtionInArrayAnswer').textContent = reverseArray(arrayToReverse);
+};
