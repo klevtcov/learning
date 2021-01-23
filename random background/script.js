@@ -1,18 +1,14 @@
-var btn1 = document.getElementById('btn1');
-var btn2 = document.getElementById('btn2');
-var main = document.querySelector('.main');
+const btn1 = document.getElementById('btn1');
+const btn2 = document.getElementById('btn2');
+const box = document.getElementById('box');
 
-var randomHex = function () {
-    let coloredLetters = ['a', 'b', 'c', 'd', 'e', 'f'];
+const randomHex = () => {
+    const coloredLetters = ['a', 'b', 'c', 'd', 'e', 'f'];
     let i = parseInt(Math.random() * 16);
-    if (i < 10) {
-        return i;
-    } else {
-        return coloredLetters[(i - 10)];
-    }
+    return (i < 10) ? i : coloredLetters[(i - 10)];
 };
 
-var randomColor = function () {
+const randomColor = () => {
     let colorForRandom = '#';
     for (let i = 0; i < 6; i++) {
         colorForRandom += randomHex();
@@ -20,15 +16,15 @@ var randomColor = function () {
     return colorForRandom;
 };
 
-var inputGradient = () => document.querySelector('.gradient').style.backgroundImage = `linear-gradient(to top, ${randomColor()} 0%, ${randomColor()} 100%)`;
+const inputGradient = () => box.style.backgroundImage = `linear-gradient(to top, ${randomColor()} 0%, ${randomColor()} 100%)`;
 
 btn1.addEventListener('click', inputGradient);
 
 btn2.addEventListener('click', () => {
     btn2.classList.toggle('clicked-btn');
     if (btn2.classList.contains('clicked-btn')) {
-        main.setAttribute('onmousemove', 'inputGradient()');
+        box.setAttribute('onmousemove', 'inputGradient()');
     } else {
-        main.removeAttribute('onmousemove');
+        box.removeAttribute('onmousemove');
     };
 });
